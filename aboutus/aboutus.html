@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+      header::before {
+        background: url(./DM.jpg) no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+        opacity: 0.6;
+
+        /* display: flex;
+            flex-direction: column; */
+      }
+      section {
+        /* border: 2px solid red; */
+        height: 344px;
+        margin: 3px 230px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .navigation {
+        display: flex;
+        font-size: 20px;
+        font-family: "The Nautigal", cursive;
+        /* align-items: center; */
+      }
+      .navigation li a:hover{
+          text-decoration: underline;
+          color: rgb(43, 40, 40);
+          font-size: 23px;
+      }
+      li {
+        list-style: none;
+        padding: 20px 23px;
+      }
+      h3 {
+        font-family: "Baloo Bhai 2", cursive;
+        font-size: 30px;
+      }
+      p {
+        text-align: center;
+      }
+      li a{
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="container">
+        <ul class="navigation">
+          <li class="item1"><a href="./code19.html">Home</a></li>
+          <li class="item2"><a href="#">About Us</a></li>
+          <li class="item3"><a href="./code27.html">Fitness Cal</a></li>
+          <li class="item4"><a href="#">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="test">
+      <h3>The way to get started is to quit talking and begin doing</h3>
+      <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt
+        tenetur animi libero neque ipsa iste nisi eum nam ea error ab reiciendis
+        iure amet id distinctio, harum sunt quo in cum, magnam quam illum?</p> -->
+      <p>
+        A person's physical fitness measures health and fitness. It can be
+        achieved through proper nutrition and careful eating habits. Nutrition
+        plays a vital role because we are what we eat. Health cannot be ignored
+        because our body needs to be healthy to function correctly. Eating
+        fruits and vegetables boosts one's health.
+      </p>
+    </section>
+    <!-- <hr> -->
+  </body>
+</html>
